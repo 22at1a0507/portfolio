@@ -9,8 +9,6 @@ body {
   background: #f9fafb;
   color: #111;
 }
-
-/* Header */
 .header {
   position: sticky;
   top: 0;
@@ -32,8 +30,6 @@ body {
 .header nav a:hover {
   color: #6c63ff;
 }
-
-/* Hero */
 .hero {
   height: 90vh;
   display: flex;
@@ -58,8 +54,6 @@ body {
   font-size: 1.2rem;
   color: #555;
 }
-
-/* Sections */
 .section {
   padding: 80px 10%;
 }
@@ -68,15 +62,11 @@ body {
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
-
-/* About */
 .profile {
   width: 180px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
-
-/* Skills */
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -100,9 +90,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 15px;
 }
-
-
-/* Lightbox */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -116,8 +103,6 @@ body {
   max-width: 80%;
   border-radius: 10px;
 }
-
-/* Button */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -127,8 +112,6 @@ body {
   border-radius: 30px;
   text-decoration: none;
 }
-
-/* Scroll animation */
 .fade {
   opacity: 0;
   transform: translateY(30px);
@@ -140,7 +123,6 @@ body {
   transform: translateY(0);
 }
 
-/* Responsive */
 @media(max-width:768px) {
   .gallery { column-count: 1; }
   .hero-title { font-size: 2.8rem; }
