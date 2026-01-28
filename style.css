@@ -300,17 +300,34 @@ body {
   animation: revealText 1.2s ease-out 0.2s both;
 }
 
-.hero-roles-container {
-  margin: 1.5rem 0;
-  height: 60px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-role-line {
+.hero-role {
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  min-height: 3rem;
+}
+
+.role-words {
+  display: inline-block;
+  position: relative;
+}
+
+.role-words span {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  animation: rotateWords 9s infinite;
+}
+
+.role-words span:nth-child(1) { animation-delay: 0s; }
+.role-words span:nth-child(2) { animation-delay: 3s; }
+.role-words span:nth-child(3) { animation-delay: 6s; }
+
+@keyframes rotateWords {
+  0%, 33% { opacity: 0; transform: translateY(20px); }
+  5%, 28% { opacity: 1; transform: translateY(0); }
+  33%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 
 .hero-sub {
@@ -332,7 +349,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .profile-avatar {
   width: 350px;
   height: 350px;
