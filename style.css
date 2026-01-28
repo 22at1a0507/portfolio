@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #111;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  padding: 18px 10%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(249,250,251,0.9);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  color: #6c63ff;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.hero-title span {
+  background: linear-gradient(90deg, #6c63ff, #00c6ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-sub {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Sections */
+.section {
+  padding: 80px 10%;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* About */
+.profile {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skills div {
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.skills div:hover {
+  transform: translateY(-5px);
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg,#6c63ff,#00c6ff);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* Scroll animation */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  .gallery { column-count: 1; }
+  .hero-title { font-size: 2.8rem; }
+}
