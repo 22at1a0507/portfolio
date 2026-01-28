@@ -3,82 +3,412 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Shreya Sree | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <button class="theme-toggle" id="themeToggle">
+    <i class="fas fa-moon"></i>
+  </button>
 
-<header class="header">
-  <div class="logo">Portfolio</div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a class="btn" href="C:\Users\DELL\Documents\Athuluru Shreya Sree_CSE.pdf">Resume</a>
-  </nav>
-</header>
-<section class="hero">
-  <h1 class="hero-title">Athuluru Shreya Sree<br>
-   <span>Software Developer</span><br><span>Web Developer</span></h1>
-  <p class="hero-sub">enthusiastic coder & Web Developer</p>
-</section>
-<section id="about" class="section fade">
-  <img src="E:\shreya (2).jpg" class="profile">
-  <div>
-    <h2>About Me</h2>
-    <p>
-      Enthusiastic and self-driven Computer Science undergraduate with strong proficiency in web
-development, data structures, and object-oriented programming. Skilled in building dynamic web
-applications and solving algorithmic challenges.
-    </p><br><br>
-    <ul class="facts">
-      <li>🌐 Programming Languages: Java,Python(basic),SQL,HTML,CSS,JS</li><br>
-      <li>💼 Role: Student </li><br>
-      <li>🎨 Interests: Full Stack Developer, Web Developer</li><br>
-    </ul>
+  <header class="header">
+    <div class="logo">Shreya<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-nav" href="Athuluru_Shreya_Sree_CSE.pdf">Resume</a>
+    </nav>
+    <button class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <section class="hero">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="text-reveal">Hi, I'm</span>
+          <span class="hero-name">Athuluru Shreya Sree</span>
+        </h1>
+        
+        <div class="hero-roles-container">
+          <div class="hero-role-line">Software Developer | Web Developer | Full Stack Developer</div>
+        </div>
+        
+        <p class="hero-sub">Passionate about creating elegant solutions through code</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-hero">Get in Touch</a>
+          <a href="#projects" class="btn btn-hero btn-outline">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Profile Avatar" class="profile-avatar">
+        <div class="avatar-decoration"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section fade">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="assets/profile.jpg" alt="Shreya Sree" class="profile-photo">
+        </div>
+        <div class="about-text">
+          <h3>Enthusiastic Developer & Problem Solver</h3>
+          <p>
+            I'm a passionate Computer Science undergraduate with strong proficiency in web
+            development, data structures, and object-oriented programming. I love building
+            dynamic web applications and solving algorithmic challenges.
+          </p>
+          
+          <div class="quick-facts">
+            <div class="fact-card">
+              <div class="fact-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <h4>Languages</h4>
+                <p>Java, Python, SQL, HTML/CSS, JavaScript</p>
+              </div>
+            </div>
+            
+            <div class="fact-card">
+              <div class="fact-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div>
+                <h4>Current Role</h4>
+                <p>Student & Aspiring Full Stack Developer</p>
+              </div>
+            </div>
+            
+            <div class="fact-card">
+              <div class="fact-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div>
+                <h4>Interests</h4>
+                <p>Web Development, UI/UX Design, AI/ML</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section fade parallax">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certifications-grid">
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>DSA - Smart Interviews</h3>
+          <p>Advanced Data Structures and Algorithms</p>
+        </div>
+        
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h3>Java - Codetantra</h3>
+          <p>Object-Oriented Programming & Java Fundamentals</p>
+        </div>
+        
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>CAD - ServiceNow</h3>
+          <p>Certified Application Developer</p>
+        </div>
+        
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>NVIDIA Deep Learning</h3>
+          <p>Fundamentals of Deep Learning & Neural Networks</p>
+        </div>
+        
+        <div class="cert-card" data-tilt>
+          <div class="cert-icon">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>Lingua Skills</h3>
+          <p>University of Cambridge English Certification</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span>HTML5</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>CSS3</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span>Java</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>SQL</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span>Git</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>React</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section fade">
+    <div class="container">
+      <h2 class="section-title">My Hobbies & Passions</h2>
+      <p class="section-subtitle">Hover over images to zoom, click to view in lightbox</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item" style="grid-column: span 2; grid-row: span 2;">
+          <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+               alt="Pencil Art" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3>Pencil Art</h3>
+            <p>Creating detailed sketches and portraits</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+               alt="Listening to Music" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3>Music</h3>
+            <p>Curating playlists & discovering new artists</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+               alt="Programming" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3>Programming</h3>
+            <p>Building projects & solving problems</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+               alt="Reading Books" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3>Reading</h3>
+            <p>Tech books & fiction novels</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" style="grid-column: span 2;">
+          <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+               alt="Sketching" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3>Sketching</h3>
+            <p>Bringing ideas to life on paper</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="project-cards">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>House Hunt Rental App</h3>
+            <span class="project-badge">MERN Stack</span>
+          </div>
+          <p class="project-description">
+            Built a full-stack house rental web app that allows renters, owners, and admins to manage listings and bookings.
+          </p>
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> Role-based dashboards</li>
+            <li><i class="fas fa-check-circle"></i> Image uploads & booking workflows</li>
+            <li><i class="fas fa-check-circle"></i> Full CRUD operations</li>
+          </ul>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Express</span>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <h3>My Tunes Music App</h3>
+            <span class="project-badge">Frontend</span>
+          </div>
+          <p class="project-description">
+            Spotify-inspired music web application with categorized playlists, song search, and media controls.
+          </p>
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> Categorized playlists</li>
+            <li><i class="fas fa-check-circle"></i> Song search functionality</li>
+            <li><i class="fas fa-check-circle"></i> Media controls (play, pause, next, previous)</li>
+          </ul>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>API Integration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>athulurushreyasree@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h3>Location</h3>
+              <p>India</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-file-download"></i>
+            </div>
+            <div>
+              <h3>Resume</h3>
+              <p>Download my resume for detailed information</p>
+              <a href="Athuluru_Shreya_Sree_CSE.pdf" class="btn btn-download">
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Athuluru Shreya Sree. All rights reserved.</p>
+      <p>Made with <i class="fas fa-heart"></i> and code</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">
+      <i class="fas fa-times"></i>
+    </button>
+    <button class="lightbox-nav" id="lightboxPrev">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav" id="lightboxNext">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" alt="Gallery Image">
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc"></p>
+      </div>
+    </div>
   </div>
-</section>
-<section id="skills" class="section fade">
-  <h2>Certifications</h2>
-  <div class="skills">
-    <div>DSA - Smart Interviews</div>
-    <div>Java - Codetantra</div>
-    <div>CAD (Certified Application Developer) - ServiceNow</div>
-    <div>NVIDIA - Fundamentals of Deep Learning</div>
-    <div>Lingua Skills - University of Cambridge</div>
-  </div>
-</section>
-<section id="skills" class="section fade">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
-    <div>SQL</div>
-    <div>JAVA</div>
-  </div>
-</section>
-<section id="projects" class="section fade">
-<h2>Projects</h2><br>
-<div>1.House Hunt Rental App – MERN Stack</div><br>
-<div>Built a full-stack house rental web app that allows renters, owners, and admins to manage listings and
-bookings.
-• Role-based dashboards, image uploads, and booking workflows
-• Hands-on experience in both frontend and backend</div><br>
-<div>2.My Tunes – Music Streaming Web App</div><br>
-<div>Built a Spotify-inspired music web page
-• Categorised playlists, song search, media controls (play, pause, next, previous)
-• Frontend built with HTML, CSS, JavaScript</div>
-</section>
-<section id="contact" class="section fade">
-  <h2>Contact</h2>
-  <p>Email: athulurushreyasree@gmail.com</p>
-  <a class="btn" href="C:\Users\DELL\Documents\Athuluru Shreya Sree_CSE.pdf">Resume</a>
-</section>
-<div class="lightbox" id="lightbox">
-  <img id="lightbox-img">
-</div>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 </body>
 </html>
