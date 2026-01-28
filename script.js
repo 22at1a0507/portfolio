@@ -1,4 +1,3 @@
-// Scroll animation
 const faders = document.querySelectorAll('.fade');
 
 window.addEventListener('scroll', () => {
@@ -10,7 +9,6 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Lightbox
 const images = document.querySelectorAll('.gallery img');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
